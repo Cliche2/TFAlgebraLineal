@@ -4,77 +4,104 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/black"
-    tools:context="com.algebralineal.tfalgebralineal.MainActivity">
+    android:background="@drawable/another_background"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
 
     <TextView
-        android:layout_marginTop="25dp"
-        android:layout_centerHorizontal="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hamming"
-        android:textSize="50dp"
-        android:textColor="@android:color/white"/>
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/poppins"
+        android:text="@string/Hamming"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="25sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="126dp"
+        android:fontFamily="@font/poppins"
+        android:text="@string/Menu"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="50sp" />
 
     <LinearLayout
-        android:layout_centerVertical="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
+
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
             <Button
-                android:id="@+id/buttonEncode"
+                android:layout_width="175dp"
+                android:layout_height="175dp"
                 android:layout_alignParentStart="true"
                 android:layout_marginStart="25dp"
-                android:background="@android:color/holo_blue_light"
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:textColor="@android:color/white"
-                android:textSize="35dp"
-                android:text="ENCODE"
-                android:onClick="goToEncodeActivity"/>
+                android:background="@drawable/white_box"
+                android:fontFamily="@font/poppins"
+                android:onClick="goToEncodeActivity"
+                android:text="@string/firstButtonString"
+                android:textColor="@color/colorAccent"
+                android:textSize="35sp" />
 
             <Button
-                android:id="@+id/buttonDecode"
+                android:layout_width="175dp"
+                android:layout_height="175dp"
                 android:layout_alignParentEnd="true"
                 android:layout_marginEnd="25dp"
-                android:background="@android:color/holo_red_dark"
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:textColor="@android:color/white"
-                android:textSize="35dp"
-                android:text="DECODE"/>
+                android:background="@drawable/white_box"
+                android:fontFamily="@font/poppins"
+                android:onClick="goToInformationActivity"
+                android:text="@string/secondButtonString"
+                android:textColor="@color/colorAccent"
+                android:textSize="35sp" />
 
         </RelativeLayout>
+
 
         <RelativeLayout
-            android:layout_marginTop="100dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
             <Button
+                android:layout_width="175dp"
+                android:layout_height="175dp"
                 android:layout_alignParentStart="true"
                 android:layout_marginStart="25dp"
-                android:background="@android:color/holo_green_light"
-                android:layout_width="150dp"
-                android:layout_height="150dp" />
+                android:background="@drawable/white_box"
+                android:fontFamily="@font/poppins"
+                android:text="@string/thirdButtonString"
+                android:textColor="@color/colorAccent"
+                android:textSize="35sp" />
 
             <Button
-                android:id="@+id/buttonQR"
+                android:layout_width="175dp"
+                android:layout_height="175dp"
                 android:layout_alignParentEnd="true"
                 android:layout_marginEnd="25dp"
-                android:background="@android:color/holo_purple"
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:textColor="@android:color/white"
-                android:textSize="50dp"
-                android:text="QR"/>
+                android:background="@drawable/white_box"
+                android:fontFamily="@font/poppins"
+                android:text="@string/fourthButtonString"
+                android:textColor="@color/colorAccent"
+                android:textSize="35sp" />
 
         </RelativeLayout>
+
 
     </LinearLayout>
 
