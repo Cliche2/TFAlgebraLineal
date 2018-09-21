@@ -1,5 +1,6 @@
 package com.algebralineal.tpalgebralineal;
 
+import android.annotation.SuppressLint;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.webkit.WebSettings;
@@ -8,7 +9,8 @@ import android.webkit.WebViewClient;
 
 public class InformationActivity extends AppCompatActivity {
 
-    String url = "https://docs.google.com/document/d/1E1zG1_6z-F8Ovy3l52jKirfcXFohW4TOcRP_1RnuEXU/edit";
+    String url = "https://docs.google.com/document/d/1E1zG1_6z-F8Ovy3l52jKirfcXFohW4TOcRP_1RnuEXU/edit?usp=sharing";
+    @SuppressLint("SetJavaScriptEnabled")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

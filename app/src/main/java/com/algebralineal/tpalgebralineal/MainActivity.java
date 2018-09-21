@@ -18,9 +18,15 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public  void goToInformationActivity(View view)
+    public void goToInformationActivity(View view)
     {
         Intent intent = new Intent(MainActivity.this, InformationActivity.class);
+        startActivity(intent);
+    }
+
+    public void goToCreditsActivity(View view)
+    {
+        Intent intent = new Intent(MainActivity.this, CreditsActivity.class);
         startActivity(intent);
     }
 }

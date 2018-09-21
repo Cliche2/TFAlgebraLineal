@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -11,98 +11,71 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
         android:layout_marginTop="10dp"
-        android:layout_centerHorizontal="true"
         android:fontFamily="@font/poppins"
         android:text="@string/Hamming"
         android:textAlignment="center"
         android:textColor="@android:color/white"
         android:textSize="25sp" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="126dp"
-        android:fontFamily="@font/poppins"
-        android:text="@string/Menu"
-        android:textAlignment="center"
-        android:textColor="@android:color/white"
-        android:textSize="50sp" />
+    <TableLayout
+        android:layout_width="0px"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="@android:color/holo_red_light">
 
-    <LinearLayout
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="100dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-
-        <RelativeLayout
+        <Button
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:layout_height="match_parent"
+            android:background="#ff4f61"
+            android:drawableTop="@drawable/ic_encode"
+            android:fontFamily="@font/poppins"
+            android:onClick="goToEncodeActivity"
+            android:padding="32dp"
+            android:text="@string/firstButtonString"
+            android:textColor="@color/colorAccent"
+            android:textSize="48sp" />
 
-            <Button
-                android:layout_width="175dp"
-                android:layout_height="175dp"
-                android:layout_alignParentStart="true"
-                android:layout_marginStart="25dp"
-                android:background="@drawable/white_box"
-                android:fontFamily="@font/poppins"
-                android:onClick="goToEncodeActivity"
-                android:text="@string/firstButtonString"
-                android:textColor="@color/colorAccent"
-                android:textSize="35sp" />
+    </TableLayout>
 
-            <Button
-                android:layout_width="175dp"
-                android:layout_height="175dp"
-                android:layout_alignParentEnd="true"
-                android:layout_marginEnd="25dp"
-                android:background="@drawable/white_box"
-                android:fontFamily="@font/poppins"
-                android:onClick="goToInformationActivity"
-                android:text="@string/secondButtonString"
-                android:textColor="@color/colorAccent"
-                android:textSize="35sp" />
+    <TableLayout
+        android:layout_width="0px"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="@android:color/holo_blue_light">
 
-        </RelativeLayout>
-
-
-        <RelativeLayout
-            android:layout_marginTop="10dp"
+        <Button
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:layout_height="match_parent"
+            android:background="#70cf98"
+            android:drawableTop="@drawable/ic_info"
+            android:fontFamily="@font/poppins"
+            android:onClick="goToInformationActivity"
+            android:padding="32dp"
+            android:text="@string/secondButtonString"
+            android:textColor="@color/colorAccent"
+            android:textSize="48sp" />
 
-            <Button
-                android:layout_width="175dp"
-                android:layout_height="175dp"
-                android:layout_alignParentStart="true"
-                android:layout_marginStart="25dp"
-                android:background="@drawable/white_box"
-                android:fontFamily="@font/poppins"
-                android:text="@string/thirdButtonString"
-                android:textColor="@color/colorAccent"
-                android:textSize="35sp" />
+    </TableLayout>
 
-            <Button
-                android:layout_width="175dp"
-                android:layout_height="175dp"
-                android:layout_alignParentEnd="true"
-                android:layout_marginEnd="25dp"
-                android:background="@drawable/white_box"
-                android:fontFamily="@font/poppins"
-                android:text="@string/fourthButtonString"
-                android:textColor="@color/colorAccent"
-                android:textSize="35sp" />
+    <TableLayout
+        android:layout_width="0px"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="@android:color/holo_green_light">
 
-        </RelativeLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#f1c84d"
+            android:drawableTop="@drawable/ic_credits"
+            android:fontFamily="@font/poppins"
+            android:onClick="goToCreditsActivity"
+            android:padding="32dp"
+            android:text="@string/thirdButtonString"
+            android:textColor="@color/colorAccent"
+            android:textSize="48sp" />
 
+    </TableLayout>
 
-    </LinearLayout>
-
-</RelativeLayout>
+</TableLayout>
